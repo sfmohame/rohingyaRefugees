@@ -73,17 +73,18 @@ Licence URI: http://www.os-templates.com/template-terms
               <li><a class="drop" href="#">Leadership Team</a>
                 <ul>
                   <li><a href="../pages/mayor.html">Karen Majewski</a></li>
-                  <li><a href="../pages/rashida.html">Rashida Tlaib</a></li>
-                  <li><a href="../pages/ali.html">Suleiman Ali Suleiman</a></li>
+                  <li><a href="../pages/rashida.html#">Rashida Tlaib</a></li>
+                  <li ><a href="../pages/ali.html">Suleiman Ali Suleiman</a></li>
                   <li><a href="../pages/mitch.html">Mitchell Shamsuddin</a></li>
                 </ul>
-                <li><a href="../pages/seema.html">Seema Ahmed</a>
-              </li>
-            </ul>
-          </li>
-          <li class="active"><a href="../pages/volunteers.html">Volunteers</a>
-          <li><a href="../pages/contact_us.html">Contact Us</a>
-          <li><a href="../pages/support.html" target="_blank">Support</a>
+                <li><a class="drop">Executive</a>
+                  <ul><li><a href="../pages/seema.html">Seema Ahmed, Founder President, PARIS</a></li></ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="../pages/volunteers.html">Volunteer</a>
+              <li><a href="../pages/support.html">Donate</a>
+                <li class="active"><a href="../pages/contact_us.html">Contact Us</a>
   
           </li>
         </ul>
@@ -111,72 +112,91 @@ Licence URI: http://www.os-templates.com/template-terms
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
-<div class="container">
-<div class="row">
-          <div class="col-lg-8 mb-4">
-        
-        <h5>Register to volunteer with <strong>P-A-R-I-S</strong></h5><br>
+<div class="wrapper bgded" ">
+      <div class="hoc  clear">
+        <article class="box clear"> 
+          <!-- ################################################################################################ -->
+          <div style="padding: 50px 150px;">
+           <h5>Volunteer as a Citizen</h5><br>
+           <p>To call, text or speak to groups of people about the brutality, and ask them to join the campaign by texting "PARIS" to 484848</p>
         <br>
           <form class="" method="post" action="#">
             
             <div class="form-group">
-              <label for="name" class="cols-sm-2 control-label">Your Name</label>
+              <label for="name" class="cols-sm-2 control-label">Full Name</label>
               <div class="cols-sm-10">
                 <div class="input-group">
                   <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-                  <input type="text" class="form-control" name="name" id="name"  placeholder="Enter your Name"/>
+                  <input type="text" class="form-control" name="name" id="name"  placeholder="Enter your Name" required/>
                 </div>
               </div>
             </div>
+
+
+
+            <div class="form-group">
+              <label for="phone_number" class="cols-sm-2 control-label">Mobile Phone</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa-lg fa-mobile fa" aria-hidden="true"></i></span>
+                   <input type="number" class="form-control" name="phone_number" id="phone_number"  placeholder="Enter your Phone Number" required/>
+                  </div>
+              </div>
+            </div>
+
+
 
             <div class="form-group">
               <label for="email" class="cols-sm-2 control-label">Your Email</label>
               <div class="cols-sm-10">
                 <div class="input-group">
                   <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-                  <input type="text" class="form-control" name="email" id="email"  placeholder="Enter your Email"/>
+                  <input type="email" class="form-control" name="email" id="email"  placeholder="Enter your Email" required/>
                 </div>
               </div>
             </div>
 
+            
+
             <div class="form-group">
-              <label for="username" class="cols-sm-2 control-label">Username</label>
+              <label for="zipcode" class="cols-sm-2 control-label">address</label>
               <div class="cols-sm-10">
                 <div class="input-group">
-                  <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
-                  <input type="text" class="form-control" name="username" id="username"  placeholder="Enter your Username"/>
+                  <span class="input-group-addon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                  <input type="address" class="form-control" name="zipcode" id="zipcode"  placeholder="Enter your Zipcode" required/>
                 </div>
               </div>
             </div>
 
+
             <div class="form-group">
-              <label for="password" class="cols-sm-2 control-label">Password</label>
+              <label for="volunteer" class="cols-sm-2 control-label">I want to volunteer as:</label>
               <div class="cols-sm-10">
                 <div class="input-group">
-                  <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-                  <input type="password" class="form-control" name="password" id="password"  placeholder="Enter your Password" required />
-                </div>
+                  </span><p> Citizen</p>
+                  <input type="radio" class="form-control" name="volunteer" id="volunteer" value="citizen"  required/>
+                  
+                  <p> Community Leader</p>
+                  <input type="radio" class="form-control" name="volunteer" id="volunteer" value="leader"  required/>
               </div>
             </div>
 
-            <div class="form-group">
-              <label for="confirm" class="cols-sm-2 control-label">Confirm Password</label>
-              <div class="cols-sm-10">
-                <div class="input-group">
-                  <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-                  <input type="password" class="form-control" name="confirm" id="confirm"  placeholder="Confirm your Password"/>
-                </div>
-              </div>
-            </div>
+
+           
+
+
+            
 
             <div class="form-group ">
               <button type="submit" class="btn" id="sendMessageButton">Register</button>
-            </div>
             
-          </form>
+          <!-- ################################################################################################ -->
+        </article>
         </div>
       </div>
     </div>
+
+
 
 
 
